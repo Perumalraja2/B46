@@ -1,0 +1,68 @@
+Objects and its internal representation in javascript
+
+
+Objects are important data types in javascript. Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). 
+Primitive data types contain one value but Objects can hold many values in form of Key: value pair.
+These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+1)Object:
+
+*key pair value
+*In JavaScript, an object is a standalone entity, with properties and type. 
+*Compare it with a cup, for example. A cup is an object, with properties. 
+*A cup has a color, a design, weight, a material it is made of, etc. 
+*The same way, JavaScript objects can have properties, which define their characteristics
+ 
+ \\ properties
+ //  Methods
+
+2)Creating Objects in JavaScript:
+*By object literal
+*By creating instance of Object directly (using new keyword)
+
+3)Syntax:
+  object={property1:value1,property2:value2......propertyN:valueN}
+
+Example:
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+
+4)Accessing JavaScript Objects:
+
+objectName.property
+
+or
+
+objectName[“property”]
+
+
+
+5)JavaScript Methods
+
+A JavaScript method is a property containing a function definition.
+
+
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log(person.fullName())
+ 
+output: John Doe
+
+
+
+
+
